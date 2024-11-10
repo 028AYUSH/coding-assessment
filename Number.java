@@ -3,6 +3,38 @@ public class Number {
         MyNumber ob = new MyNumber();
         //Example:----
         System.out.println("Is 3025 a Tech Number? " + ob.isTechNumber(3025));
+        boolean isSpy = ob.isSpyNumber(3025);
+        System.out.println("IS 3025 a spy number " + isSpy);
+        boolean isDuck = ob.isDuckNumber(3025);
+        System.out.println("IS 3025 a Duck number " + isDuck);
+        boolean isBuzz = ob.isBuzzNumber(3025);
+        System.out.println("IS 3025 a Buzz number " + isBuzz);
+        boolean isDisarium = ob.isDisariumNumber(3025);
+        System.out.println("IS 3025 a Disarium number " + isDisarium);
+        long isTribonacci = ob.TribonacciNumber(3025);
+        System.out.println(" 3025 a Tribonacci number " + isTribonacci);
+        boolean isMagic = ob.isMagicNumber(3025);
+        System.out.println("IS 3025 a Magic number " + isMagic);
+        boolean isAbundant = ob.isAbundantNumber(3025);
+        System.out.println("IS 3025 a Abundant number " + isAbundant);
+        boolean isNeon = ob.isNeonNumber(3025);
+        System.out.println("IS 3025 a Neon number " + isNeon);
+        boolean isArmstrong = ob.isArmstrongNumber(3025);
+        System.out.println("IS 3025 a Armstrong number " + isArmstrong);
+        boolean isPronic = ob.isPronicNumber(3025);
+        System.out.println("IS 3025 a Pronic number " + isPronic);
+        boolean isHarshad = ob.isHarshadNumber(3025);
+        System.out.println("IS 3025 a Harshad number " + isHarshad);
+        boolean isHarshadMagic = ob.isHarshadMagicNumber(3025);
+        System.out.println("IS 3025 a Harshad magic number " + isHarshadMagic);
+        boolean isDudeney = ob.isDudeneyNumber(3025);
+        System.out.println("IS 3025 a Dudeney number " + isDudeney);
+        boolean isNiven = ob.isNivenNumber(3025);
+        System.out.println("IS 3025 a Niven number " + isNiven);
+        boolean isBouncy = ob.isBouncyNumber(3025);
+        System.out.println("IS 3025 a Bouncy number " + isBouncy);
+
+
     }
 }
 
@@ -129,7 +161,7 @@ class MyNumber {
         return n % sum == 0;
     }
 
-    boolean HarshadMagicNumber(int n) {
+    boolean isHarshadMagicNumber(int n) {
         return isHarshadNumber(n) && isMagicNumber(n);
     }
 
